@@ -9,19 +9,33 @@
 </head>
 <body background="img/photo-8.jpg">
     <div class="container">
-        <h1 class="text-center mt-5" style="color: aliceblue;"><span style="color: red;">Covid19</span> Live Data From Denmark</h1>
+        <!-- Total Cases -->
+        <h1 class="text-center mt-5" style="color: aliceblue;"><span style="color: red;">Covid19</span> Total Cases - Denmark</h1>
         <br></br>
         <table class="table table-hover">
             <thead>
                 <tr style="color: aliceblue;">
-                    <td>NewConfirmed</td>
-                    <td>TotalConfirmed</td>
-                    <td>NewDeaths</td>
-                    <td>TotalDeaths</td>
-                    <td>TotalRecovered</td>
+                    <td>Date</td>
+                    <td>Total Confirmed</td>
+                    <td>Total Deaths</td>
+                    <td>Total Recovered</td>
                 </tr>
             </thead>
-            <tbody id="myData" style="color: aliceblue;"><h5 style="color: green;">Daily Update</h5></tbody>
+            <tbody id="myData" style="color: aliceblue;"></tbody>
+        </table>
+        <!-- New Cases -->
+        <h1 class="text-center mt-5" style="color: aliceblue;"><span style="color: red;">Covid19</span> New Cases - Denmark</h1>
+        <br></br>
+        <table class="table table-hover">
+            <thead>
+                <tr style="color: aliceblue;">
+                    <td>Date</td>
+                    <td>Total Confirmed</td>
+                    <td>Total Deaths</td>
+                    <td>Total Recovered</td>
+                </tr>
+            </thead>
+            <tbody id="myLiveData" style="color: aliceblue;"></tbody>
         </table>
     </div>
 </body>
