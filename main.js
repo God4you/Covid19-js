@@ -10,11 +10,11 @@ async function getCovidapi(){
     const item=jsdata.Countries[46];//Denmark
     console.log(item)
     $myData.append(                   
-    `<td>[${item.NewConfirmed}]</td>
-    <td>[${item.TotalConfirmed}]</td>
-    <td>[${item.NewDeaths}]</td>
-    <td>[${item.TotalDeaths}]</td>
-    <td style="color: green;">[${item.TotalRecovered}]</td>
+    `<td>${item.NewConfirmed}</td>
+    <td>${item.TotalConfirmed}</td>
+    <td style="color: red;">${item.NewDeaths}</td>
+    <td>${item.TotalDeaths}</td>
+    <td>${item.TotalRecovered}</td>
     `)
 }
 getCovidapi()
