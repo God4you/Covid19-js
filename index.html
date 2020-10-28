@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid19</title>
+    <title>BK-Covid19</title>
     <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
 </head>
-<body background="img/photo-8.jpg">
+<body background="img/photo-star.jpg">
     <div class="container">
         <!-- Total Cases -->
-        <h1 class="text-center mt-5" style="color: aliceblue;"><span style="color: red;">Covid19</span> Total Cases - Denmark</h1>
+        <h1 class="text-center mt-5" style="color: aliceblue;"><span style="color: red;">Covid19</span> Totale Sager - Denmark</h1>
         <br></br>
         <table class="table table-hover">
             <thead>
                 <tr style="color: aliceblue;">
-                    <td>Date</td>
-                    <td>Total Confirmed</td>
-                    <td>Total Deaths</td>
-                    <td>Total Recovered</td>
+                    <!--<td>Dato</td>-->
+                    <td>Total Smittede</td>
+                    <td>Total Dødsfald</td>
+                    <td>Total Overstået infektion</td>
                 </tr>
             </thead>
             <tbody id="myData" style="color: aliceblue;"></tbody>
         </table>
         <!-- New Cases -->
-        <h1 class="text-center mt-5" style="color: aliceblue;"><span style="color: red;">Covid19</span> New Cases - Denmark</h1>
+        <h1 class="text-center mt-5" style="color: aliceblue;"><span style="color: red;">Covid19</span> Seneste Sager - Denmark</h1>
         <br></br>
         <table class="table table-hover">
             <thead>
                 <tr style="color: aliceblue;">
-                    <td>Date</td>
-                    <td>Total Confirmed</td>
-                    <td>Total Deaths</td>
-                    <td>Total Recovered</td>
+                   <!-- <td>Dato</td>-->
+                    <td>Nye Smittede</td>
+                    <td>Nye Dødsfald</td>
+                    <td>Nye Overstået infektion</td>
                 </tr>
             </thead>
             <tbody id="myLiveData" style="color: aliceblue;"></tbody>
@@ -40,5 +40,6 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </html>
