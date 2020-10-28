@@ -21,7 +21,7 @@ async function getCovidApi(){
     $myNewCases.append(                   //<td>${item.Date}</td>
     `
     <td>${item.NewConfirmed}</td>
-    <td style="color: red;">-->${item.NewDeaths}<--</td>
+    <td style="color: red;">${item.NewDeaths}</td>
     <td>${item.NewRecovered}</td>
     `)
 }
