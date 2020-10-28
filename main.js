@@ -9,17 +9,22 @@ async function getCovidApi(){
     console.log(jsdata)
     const item=jsdata.Countries[46];//Denmark
     console.log(item)
-    //Total Cases
-    $myTotalCases.append(     //<td>${item.Date}</td>              
-    `       
+
+    let dateOnly = item.Date;
     
+
+    //Totale sager
+    $myTotalCases.append(             //.substr(0,10) (index 0 til 10 skal vises = kun datoen ikke noget tid.)     
+    `       
+    <td>${dateOnly.substr(0,10)}</td> 
     <td>${item.TotalConfirmed}</td>
     <td style="color: red;">${item.TotalDeaths}</td>
     <td>${item.TotalRecovered}</td>
     `)
-    //New Cases
-    $myNewCases.append(                   //<td>${item.Date}</td>
+    //Nye sager
+    $myNewCases.append(                     
     `
+    <td>${item.Date.substr(0,10)}</td>
     <td>${item.NewConfirmed}</td>
     <td style="color: red;">${item.NewDeaths}</td>
     <td>${item.NewRecovered}</td>
